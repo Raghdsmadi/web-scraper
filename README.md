@@ -5,6 +5,6 @@ Author: Raghd Smadi :read_heart:
 
 ********************************************************
 
-[web_scraper pull request](https://github.com/Raghdsmadi/web-scraper/pull/1) <br>
+[web_scraper pull request](https://github.com/Raghdsmadi/web-scraper/pull/2) <br>
 How to run my application: <br>
 python web_scraper.py <br>
