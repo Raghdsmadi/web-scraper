@@ -8,9 +8,12 @@ def get_citations_needed_report(url):
     r = requests.get(url)
     soup = BeautifulSoup(r.content, 'html.parser')
     all_paragraphs = soup.findAll("p")
+    # count = 0
+    # for p in all_paragraphs:
+    # if "citation" in str(p):
 
     for p in all_paragraphs:
-        if "citation needed" in str(p):
+        if p.find('span'):
             print(p)
 
 def get_citations_needed_count(url: str):
@@ -21,7 +24,7 @@ def get_citations_needed_count(url: str):
     all_paragraphs = soup.findAll("p")
 
     for p in all_paragraphs:
-        if "citation needed" in str(p):
+        if p.find('span'):
             count += 1
 
     return count
